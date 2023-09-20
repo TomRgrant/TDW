@@ -1,15 +1,17 @@
 import React from "react";
 
-
 const ArticleList = (props) => {
 
 
-    return (
+console.log(props);
+
+
+    return(
         <>
-        <div style={{padding: '10px', border: '2px solid dodgerblue'}}>
-            <h1>{props.article.title}</h1>
-            <h3>{props.article.author}</h3>
-        </div>
+            <div style={{border: '5px solid dodgerblue', padding: '1rem'}}>
+                <h1>{props.article.title}</h1>
+                <h3>{props.article.author}</h3>
+            </div>
         </>
     );
 };
