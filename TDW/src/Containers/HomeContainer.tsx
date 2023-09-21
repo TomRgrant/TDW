@@ -31,6 +31,7 @@ const HomeContainer = () => {
   }
 
 
+
   return (
     <>
       <section>
@@ -44,7 +45,9 @@ const HomeContainer = () => {
         <h1>Total results for <span style={{ textDecoration: 'underline' }}>{searchTerm}</span> {articles.totalResults}</h1>
         <div className="article-list">
           {articles.articles.map((article, index) => (
+            <Link to={`/article/${article.title}`}>
             <ArticleList key={index} article={article} />
+            </Link>
           ))}
         </div>
       </section>

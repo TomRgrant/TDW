@@ -3,7 +3,6 @@ import React from "react";
 const ArticleList = (props) => {
 
 
-console.log(props);
 
 
     return(
